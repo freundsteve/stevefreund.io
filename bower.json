@@ -1,0 +1,27 @@
+{
+  "name": "rustin",
+  "version": "0.0.1",
+  "authors": [
+    "Holger Koenemann"
+  ],
+  "description": "simple html project framework",
+  "license": "commercial",
+  "homepage": "http://www.templatedeck.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.3.1",
+    "bootstrap-sass": "~3.3.6",
+    "bootstrap-validator": "~0.8.1",
+    "font-awesome": "~4.6.1",
+    "jquery": "~2.1.4",
+    "owl.carousel": "*",
+    "smoothScroll": "https://github.com/alicelieutier/smoothScroll.git",
+    "wow": "~1.1.2"
+  }
+}

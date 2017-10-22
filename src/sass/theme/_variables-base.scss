@@ -1,0 +1,158 @@
+///////////////////////////////////////////////////////////////////////////////
+//Basic Setup Beginn
+///////////////////////////////////////////////////////////////////////////////
+
+// Fonts and Typo
+$font-family-sans-serif:  	"Helvetica Neue",Helvetica,Arial,sans-serif;
+$secondary-font-family:		$font-family-sans-serif;
+$font-size-base:          	14px;
+$line-height-base: 			1.6!default;
+$text-color:				#404040;
+
+// Bootstrap color overwrites
+$brand-primary:         #0db8b2; 
+
+
+//Padding between columns. Gets divided in half for the left and right. Also used for wrapper vertical paddings
+$grid-gutter-width:         120px !default;
+$body-bg:					#181818;
+
+//Color setup for wrappers
+$default-color:		#fff;
+$default-text:		$text-color;
+
+
+$contrast-color:  	#232323;
+$contrast-text:		#fff;
+
+$accent-color: 		$brand-primary;
+$accent-text:		#fff;
+
+$light-color:   	lighten($contrast-color, 77%);
+$light-text:		$text-color;
+
+$lighter-color:		lighten($contrast-color, 81%);
+$lighter-text:		$text-color;
+
+$lightest-color:	lighten($contrast-color, 84%);
+$lightest-text:		$text-color;
+
+$dark-color:		#404040;
+$dark-text:			lighten($text-color, 50%);
+
+$darker-color:		#111;
+$darker-text:		lighten($text-color, 60%);
+
+$darkest-color:		#000;
+$darkest-text:		#fff;
+
+$brand-success:         $accent-color;
+$btn-primary-border:	$brand-primary;
+$brand-warning:         #f96332;
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical:     ($grid-gutter-width/6);
+$padding-base-horizontal:   ($padding-base-vertical*2);
+
+$padding-large-vertical:    ($padding-base-vertical*1.25);
+$padding-large-horizontal:  ($padding-base-vertical*6);
+
+$padding-small-vertical:    ($padding-base-vertical*0.5);
+$padding-small-horizontal:  ($padding-base-vertical*1.5);
+
+$padding-xs-vertical:       1px !default;
+
+//Buttons 
+$btn-border-radius-base:         2px;
+$btn-border-radius-large:        2px;
+$btn-border-radius-small:        2px;
+
+$font-size-h1:            floor(($font-size-base * 6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 3.75)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 2.75)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 2)) !default; // ~18px
+$font-size-h5:            ceil(($font-size-base * 1.5)) !default;
+$font-size-h6:            ceil(($font-size-base * 1.25)) !default; // ~12px
+
+
+// Basics of a navbar
+
+$nav-link-padding:                 10px 25px !default;
+$navbar-height:                    ($grid-gutter-width/1.25);
+$navbar-margin-bottom:             0px;
+$navbar-border-radius:             0px;
+$navbar-collapse-max-height:       340px !default;
+
+$navbar-default-color:             $default-text;
+$navbar-default-bg:                $default-color;
+$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+
+// Navbar links
+$navbar-default-link-color:                $text-color;
+$navbar-default-link-hover-color:          #fff !default;
+$navbar-default-link-hover-bg:             $accent-color;
+$navbar-default-link-active-color:         $text-color;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
+// Navbar brand label
+$navbar-default-brand-color:               #000;
+$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
+$navbar-default-brand-hover-bg:            transparent !default;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           #ddd !default;
+$navbar-default-toggle-icon-bar-bg:        #888 !default;
+$navbar-default-toggle-border-color:       #ddd !default;
+
+//=== Inverted navbar
+// Reset inverted navbar basics
+$navbar-inverse-color:                      $contrast-text;
+$navbar-inverse-bg:                         $darkest-color;
+$navbar-inverse-border:                     1px solid rgba(255,255,255,.05);
+
+// Inverted navbar links
+$navbar-inverse-link-color:                 $contrast-text;
+$navbar-inverse-link-hover-color:           #fff !default;
+$navbar-inverse-link-hover-bg:              $accent-color;
+$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
+$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%) !default;
+$navbar-inverse-link-disabled-color:        #444 !default;
+$navbar-inverse-link-disabled-bg:           transparent !default;
+
+// Inverted navbar brand label
+$navbar-inverse-brand-color:                $contrast-text;
+$navbar-inverse-brand-hover-color:          #fff !default;
+$navbar-inverse-brand-hover-bg:             transparent !default;
+
+// Inverted navbar toggle
+$navbar-inverse-toggle-hover-bg:            #333 !default;
+$navbar-inverse-toggle-icon-bar-bg:         #fff !default;
+$navbar-inverse-toggle-border-color:        #fff !default;
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+$dropdown-bg:                    $dark-color;
+//** Dropdown menu `border-color`.
+$dropdown-border:                rgba(0,0,0,.15) !default;
+//** Dropdown menu `border-color` **for IE8**.
+$dropdown-fallback-border:       #ccc !default;
+//** Divider color for between dropdown items.
+$dropdown-divider-bg:            #e5e5e5 !default;
+
+//** Dropdown link text color.
+$dropdown-link-color:            $dark-text;
+//** Hover color for dropdown links.
+$dropdown-link-hover-color:      $accent-text;
+//** Hover background for dropdown links.
+$dropdown-link-hover-bg:         $accent-color;
+//** Default Navbar active bg color
+$navbar-default-link-active-bg:            $default-color;
+
